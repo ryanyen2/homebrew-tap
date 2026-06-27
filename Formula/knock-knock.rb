@@ -11,7 +11,7 @@
 class KnockKnock < Formula
   desc "Collaborating coding agents over Discord, gated by your own allow/ask/deny rules"
   homepage "https://github.com/ryanyen2/knock-knock"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   BASE = "https://github.com/ryanyen2/knock-knock/releases/download/v#{version}".freeze
@@ -19,20 +19,20 @@ class KnockKnock < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "#{BASE}/knock-knock-darwin-arm64"
-      sha256 "6c04419d3095a2c7099fd71b430870c99dea871416f62609460b837852972512"
+      sha256 "b4cab29b6d5b99dfcaa260597e620a93d3fdd919fc26b0d722217c205f1a626a"
     else
       url "#{BASE}/knock-knock-darwin-x64"
-      sha256 "ed2efa5428c4cc17d266eede9ff97e6d65004fcaa58faaab0fd626194f2e9e1e"
+      sha256 "d476c7d8ec1d7e4d08a119f63e1ccaa9ceb3b6d39422057db5324f724e63982a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "#{BASE}/knock-knock-linux-arm64"
-      sha256 "7af5aca5f7ad932abc5d086197d0f63a8b72d176f8a515468b0ade968d2efdbf"
+      sha256 "1c81942e5539ecedf588e05d91a3fd4fdbea90487ec9a31d8d797cda45e2016f"
     else
       url "#{BASE}/knock-knock-linux-x64"
-      sha256 "224daf82f60dceb3fe9fe55b734f86a57bceb6543955fa8ec501aa94a38b1883"
+      sha256 "5c3bcfa56059a8d0e6c94d68ddabc505b5e215d9f11d9039e8c6f00324d390d9"
     end
   end
 
